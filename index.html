@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stora Studio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/img1.png" alt="Logo">    
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a>
+                </li><li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="section1">
+            <h1>Web Developer</h1>
+            <!-- SVG icons -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M568 320C568 457 457 568 320 568C294.4 568 269.8 564.1 246.6 556.9C256.7 540.4 271.8 513.4 277.4 491.9C280.4 480.3 292.8 432.9 292.8 432.9C300.9 448.3 324.5 461.4 349.6 461.4C424.4 461.4 478.3 392.6 478.3 307.1C478.3 225.2 411.4 163.9 325.4 163.9C218.4 163.9 161.5 235.7 161.5 314C161.5 350.4 180.9 395.7 211.8 410.1C216.5 412.3 219 411.3 220.1 406.8C220.9 403.4 225.1 386.5 227 378.7C227.6 376.2 227.3 374 225.3 371.6C215.2 359.1 207 336.3 207 315C207 260.3 248.4 207.4 319 207.4C379.9 207.4 422.6 248.9 422.6 308.3C422.6 375.4 388.7 421.9 344.6 421.9C320.3 421.9 302 401.8 307.9 377.1C314.9 347.6 328.4 315.8 328.4 294.5C328.4 275.5 318.2 259.6 297 259.6C272.1 259.6 252.1 285.3 252.1 319.8C252.1 341.8 259.5 356.6 259.5 356.6C259.5 356.6 235 460.4 230.5 479.8C225.5 501.2 227.5 531.4 229.6 551C137.4 514.9 72 425.1 72 320C72 183 183 72 320 72C457 72 568 183 568 320z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/></svg>
+        </div>
+
+        <div class="section2">
+            <p class="intro">Introduction</p>
+            <h3>I’m a passionate web developer focused on building clean and functional digital experiences.</h3>
+            <p>With a strong foundation in modern technologies and a drive for continuous learning, I enjoy solving problems through code and design. My goal is to create projects that are not only technically solid but also intuitive and engaging for users.</p>
+            <a href="skills.html" class="button" target="_blank">View my CV</a>
+        </div>
+
+        <div class="section3">
+            <p class="intro">Skills</p>
+            <h3>My skill set combines technical expertise with problem-solving. I’m always learning and expanding to stay ahead of the curve.   </h3>
+            <div class="sec3item">
+            <h4 class="sec3p">6</h4> <p>years of<br> experience</p>
+            <h4 class="sec3p">51</h4> <p>satisfied<br> clients</p>
+            <h4 class="sec3p">456</h4> <p>coffees<br> drunk</p>
+            </div>
+            <a href="skills.html" class="button">Read more</a>
+        </div>
+
+        <div class="section4">
+            <!-- SVG icons -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#e0fbfc" d="M405.8 376.9C415.6 370.2 429.2 364.4 429.2 364.4C429.2 364.4 390.5 371.4 352 374.6C304.9 378.5 254.3 379.3 228.9 375.9C168.8 367.9 261.9 345.8 261.9 345.8C261.9 345.8 225.8 343.4 181.3 364.8C128.8 390.2 311.3 401.8 405.8 376.9zM320.4 344.8C301.4 302.1 237.3 264.6 320.4 199C424.1 117.2 370.9 64 370.9 64C392.4 148.5 295.3 174.1 260.2 226.6C236.3 262.5 271.9 301 320.4 344.8zM435 168.6C435.1 168.6 259.8 212.4 343.5 308.8C368.2 337.2 337 362.8 337 362.8C337 362.8 399.7 330.4 370.9 289.9C344 252.1 323.4 233.3 435 168.6zM428.9 439.1C428.4 440.1 427.7 440.9 426.9 441.7C555.2 408 508 322.8 446.7 344.4C443.4 345.6 440.5 347.8 438.5 350.7C442.1 349.4 445.8 348.4 449.5 347.7C480.5 341.2 525 389.2 428.9 439.1zM476 501.4C476 501.4 490.5 513.3 460.1 522.6C402.2 540.1 219.3 545.4 168.5 523.3C150.2 515.4 184.5 504.3 195.3 502C206.5 499.6 213 500 213 500C192.7 485.7 81.7 528.1 156.6 540.2C360.8 573.4 529 525.3 476 501.4zM252.5 460C173.8 482 300.4 527.4 400.6 484.5C390.8 480.7 381.4 476.1 372.4 470.7C327.7 479.2 307 479.8 266.4 475.2C232.9 471.4 252.5 460 252.5 460zM432.3 557.2C353.6 572 256.5 570.3 199 560.8C199 560.7 210.8 570.5 271.4 574.4C363.6 580.3 505.2 571.1 508.5 527.5C508.5 527.5 502.1 544 432.3 557.2zM388.7 417C329.5 428.4 295.2 428.1 251.9 423.6C218.4 420.1 240.3 403.9 240.3 403.9C153.5 432.7 288.5 465.3 409.8 429.8C402 427 394.8 422.7 388.7 417z"/></svg>
+        </div>
+
+        <div class="section5" >
+            <img src="img/img5.jpg" alt="">
+            <img src="img/img4.jpg" alt="">
+            <img src="img/img5.jpg" alt="">
+            <img src="img/img4.jpg" alt="">
+            <img src="img/img5.jpg" alt="">
+            <img src="img/img4.jpg" alt="">
+            <img src="img/img5.jpg" alt="">
+            <img src="img/img4.jpg" alt="">
+            <img src="img/img5.jpg" alt="">
+        </div>
+
+        <div class="section6">
+            <p class="intro">Projects</p>
+            <h3>Here you’ll find a selection of my recent projects. Each one reflects my focus on clean design and practical functionality.</h3>
+            <div class="blog-container">
+        <div class="blog-box">
+            <h3>Mysterium Cosplay</h3>
+            <p>Mysterium Cosplay is a vibrant website dedicated to cosplay enthusiasts and costume creators. It showcases detailed designs, tutorials, and a gallery of completed projects, making it easy for fans to explore, get inspired, and connect with the cosplay community.</p>
+               <a href="https://mysteriumcosplay.com/" class="button" target="_blank">Visit website</a>
+        </div>
+        <div class="blog-box">
+            <h3>JOSTAV Gbely</h3>
+            <p>This website represents a professional building and construction company. It highlights the company’s services, past projects, and expertise, providing potential clients with a clear understanding of their capabilities and commitment to quality craftsmanship.</p>
+                <a href="https://www.jostav.sk/" class="button" target="_blank">Visit website</a>
+        </div>
+        <div class="blog-box">
+            <h3>Medi-Sell</h3>
+            <p>A clean and user-friendly e-commerce platform for medical supplies. The site focuses on clear product listings, secure transactions, and easy navigation, ensuring healthcare professionals and customers can find what they need quickly and reliably.</p>
+                <a href="" class="button">Visit website</a>
+        </div>
+
+         <div class="blog-box">
+            <h3>Gymnast</h3>
+            <p>This website promotes a modern fitness center, featuring class schedules, membership options, and training programs. It’s designed to motivate visitors to join, stay active, and explore the variety of services offered to support their fitness goals.</p>
+                <a href="http://www.ssspsenica.sk/majdo/Gymnast/" class="button">Visit website</a>
+        </div>
+        <div class="blog-box">
+            <h3>Namari</h3>
+            <p>Namari photo studio is a visually appealing website showcasing photography services and portfolios. With galleries, client testimonials, and booking options, it helps visitors easily explore work samples and schedule professional photography sessions.</p>
+                <a href="http://www.ssspsenica.sk/majdo/namari/" class="button" target="_blank">Visit website</a>
+        </div>
+        <div class="blog-box">
+            <h3>Dozecafe</h3>
+            <p>A cozy and inviting website for a local coffee shop, highlighting the menu, special drinks, and seasonal offers. It’s designed to attract visitors, showcase the shop’s unique atmosphere, and encourage them to stop by for a great coffee experience.</p>
+                <a href="http://www.ssspsenica.sk/majdo/Dozecafe/" class="button">Visit website</a>
+        </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="contact">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3 class="footer_h3">About Me</h3>
+            <p>With a strong foundation in modern technologies and a drive for continuous learning, I enjoy solving problems through code and design. My goal is to create projects that are not only technically solid but also intuitive and engaging for users.</p>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer_h3">Links</h3>
+            <ul>
+              <li><a href="#service">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer_h3">Contact</h3>
+            <p>Email: info@storastudio.online</p>
+            <p>Phone: +45 50 39 95 72</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Stora Studio. All rights reserved.</p>
+    </div>
+</footer>
+    </div>
+
+    
+    <!-- <script>
+        window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    if(window.scrollY > 50){ 
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }});
+    </script> -->
+</body>
+</html>

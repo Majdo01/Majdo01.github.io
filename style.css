@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rubik:wght@400&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    padding-top: 150px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13293D;
+    color: #E0FBFC;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.navbar.scrolled {
+    background-color: rgba(19, 41, 61, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .logo img {
+    width: 150px;
+}
+
+.navbar .menu {
+    flex-grow: 1;
+}
+
+.navbar .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    color: #E0FBFC;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.navbar .menu ul li a:hover {
+    color: #3E92CC; 
+}
+
+/* Responsive Navbar - stack on mobile */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .navbar .menu ul {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+/* Container and sections */
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.section1{
+    grid-column: span 3;
+    background-color: #13293D;
+    height: 80vh;
+    padding: 100px;
+}
+
+.section2{
+    grid-column: span 3;
+    background-color: #13293D;
+    height: 80vh;
+    padding: 100px;
+}
+
+.section3{
+    grid-column: span 3;
+    background-color: #0A151F;
+    height: 80vh;
+    padding: 100px;
+}
+
+.section4{
+    grid-column: span 3;
+    background-color: #0A151F;
+    height: 80vh;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 50px 50px;
+}
+
+.section5{
+    grid-column: span 6;
+    background-color: #13293D;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    align-items: center;
+    justify-items: center;
+}
+
+.section6{
+    grid-column: span 6;
+    background-color: #0A151F;
+    height: 150vh;
+    padding: 100px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.blog-box {
+    background-color: #13293D;
+    padding: 20px;
+    border-radius: 10px;
+    color: #E0FBFC;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.section5 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.section5 img:hover{
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.section1 img{
+    width: 150px;
+    padding: 0;
+}
+
+.section1 h1{
+    font-size: clamp(40px, 8vw, 100px);
+    color: #3E92CC;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+.section1 svg{
+    width: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.section1 svg:hover{
+    transform: translateX(5px);
+}
+
+.section4 svg{
+    width: 150px;
+}
+
+.intro{
+    font-style: italic;
+    color: #3E92CC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+.sec3item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section3, .sec3p{
+    color: #E0FBFC;
+    font-size: 60px;
+}
+
+.section2 .section3, h3{
+    margin-top: 10px;
+    margin-bottom: 55px;
+    font-size: 24px;
+    color: #E0FBFC;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+.section2, p{
+    font-size: 17px;
+    color: #3E92CC;
+}
+
+.section2 h3, 
+.section3 h3, 
+.section4 h3 {
+    color: #E0FBFC;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.section2 p, 
+.section3 p, 
+.section4 p {
+    color: #3E92CC;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}   
+
+.button{
+    margin-top: 55px;
+    width: 150px;
+    height: 40px;
+    background: #E0FBFC;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.button:hover{
+    transform: translateX(5px);
+}
+
+.button{
+    color: #3E92CC;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #13293D;
+    color: #E0FBFC;
+    padding: 100px 100px 30px 100px;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    grid-column: span 6;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1500px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #3E92CC;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #E0FBFC;
+    transition: color 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #3E92CC;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+
+.footer_h3{
+    margin-bottom: 20px;
+}
+
+/* Responsive layout for sections */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .section1,
+    .section2,.section3,.section4,.section5,.section6, .footer {
+        grid-column: span 1;
+        height: auto;
+        padding: 50px;
+    }
+
+    .section5 {
+        grid-template-columns: 1fr;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .section1 h1 {
+        font-size: clamp(28px, 10vw, 80px);
+    }
+
+    .section4 {
+        grid-template-columns: repeat(4, 1fr);
+        height: auto;
+        padding: 50px;
+    }
+
+    .section4 svg {
+        width: 100px;
+    }
+
+    .blog-container {
+         grid-template-columns: 1fr; 
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .section1,
+    .section2,.section3,.section4,.section5,.section6, .footer  {
+        grid-column: span 1;
+        height: auto;
+        padding: 50px;
+    }
+
+    .section1 h1 {
+        font-size: clamp(28px, 10vw, 80px);
+    }
+
+    .navbar .logo img {
+        width: 100px;
+    }
+
+    .section1 svg {
+        width: 40px;
+        margin-top: 15px;
+    }
+
+    .section4 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .section4 svg {
+        width: 70px;
+    }
+
+    body{
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .section5,.section6, .footer  {
+        grid-column: span 1;
+        height: auto;
+        padding: 50px;
+    }
+
+    .section1,
+    .section2,.section3,.section4 {
+        grid-column: span 1;
+        height: auto;
+        padding: 50px;
+    }
+
+    .section1 h1 {
+        font-size: clamp(28px, 10vw, 80px);
+    }
+
+    .navbar .logo img {
+        width: 100px;
+    }
+
+    .section1 svg {
+        width: 40px;
+        margin-top: 15px;
+    }
+
+    .section4 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .section4 svg {
+        width: 70px;
+    }
+
+    body{
+        padding-top: 100px;
+    }
+}
